@@ -19,7 +19,7 @@ A cloud-hosted AWS honeypot designed to attract, capture, and analyze malicious 
 * [🚀 Features](#-features)
 * [📊 Data Collection Metrics](#-data-collection-metrics)
 * [🛠️ Technology Stack](#️-technology-stack)
-* [📦 Configuration](#-configuration)
+* [📦 Configuration](#configuration)
 * [📁 Project Structure](#-project-structure)
 * [🔒 Security Considerations](#-security-considerations)
 * [📈 Daily Updates](#-daily-updates)
