@@ -1,0 +1,74 @@
+# ===============================
+# T-Pot Honeypot Configuration
+# AWS Deployment Template
+# ===============================
+
+# ---- SYSTEM SETTINGS ----
+system:
+  timezone: "UTC"                 # Adjust if needed
+  hostname: "tpot-honeypot"       # System hostname
+  ssh_port: 22                    # Change to custom port for security
+  auto_updates: true              # Enable unattended security updates
+
+# ---- NETWORK SETTINGS ----
+network:
+  interface: "eth0"
+  ip_assignment: "dhcp"           # or "static"
+  static_ip:                      # Only used if ip_assignment = static
+    address: "x.x.x.x/24"
+    gateway: "x.x.x.x"
+    dns:
+      - "1.1.1.1"
+      - "8.8.8.8"
+
+  allowed_inbound_ports:          # AWS Security Groups MUST allow these
+    - 22        # SSH
+    - 80        # HTTP
+    - 443       # HTTPS
+    - 64297     # T-Pot web UI (default)
+    - "all-honeypot-ports"  # (placeholder – see honeypots section)
+
+# ---- HONEYPOT SERVICES ----
+honeypots:
+  enabled:
+    cowrie: true                  # SSH/Telnet honeypot
+    dionaea: true                 # Malware capture
+    conpot: true                  # ICS/SCADA emulation
+    suricata: true                # IDS
+    elasticpot: true
+    heralding: true
+    honeypy: false                # Example disabled module
+    mailoney: true
+    rdpy: true
+    snare: true
+    glutton: true
+    tanner: true
+
+  # Optional: Additional parameters for specific honeypots
+  cowrie_config:
+    ssh_port: 2222                # Cowrie default port
+    telnet_port: 2223
+    max_connections: 30
+
+  dionaea_config:
+    capture_directory: "/data/dionaea/binaries"
+
+# ---- LOGGING + STORAGE ----
+logging:
+  enabled: true
+  log_path: "/data/log"
+  ship_to_elastic: true
+  elastic_url: "http://localhost:64297"
+  retention_days: 30
+
+storage:
+  rotate_logs: true
+  max_log_size_mb: 5000
+
+# ---- AWS SPECIFIC ----
+aws:
+  cloudwatch_logs: false          # Enable if you want centralized logging
+  cloudwatch_group: "/tpot/logs"
+  instance_metadata: true
+
+# ---- CREDENTIALS (Placeholders; DO NOT STORE REAL C
