@@ -367,7 +367,26 @@ Follow weekly progress in my weekly writeups, including:
 * **Day 7:** Weekly analytical report
 
 ---
+### Key Findings
+## Correlation Analysis: Cloudflare Outage Impact
 
+On December 5, 2025, Cloudflare experienced service disruptions while patching 
+a React vulnerability. Our honeypot data shows:
+
+- **30,967 SSH attempts** via Cowrie within hours of the outage
+- **20x normal attack volume** during the incident window  
+- **95% of attacks** targeted SSH/Telnet vs normal distribution of 30-40%
+
+### Attack Pattern Interpretation:
+1. Automated botnet systems detected the Cloudflare disruption
+2. Triggered reconnaissance protocols seeking vulnerable infrastructure
+3. SSH/Telnet services targeted as potential management interfaces
+4. Attack volume returned to baseline within 24 hours post-incident
+
+### Key Finding:
+Major CDN/infrastructure outages trigger immediate, automated scanning 
+campaigns as threat actors seek to exploit potential chaos.
+---
 ## 📊 Sample Data Insights
 
 ```
