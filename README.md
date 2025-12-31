@@ -206,6 +206,20 @@ A production-grade honeypot deployed on AWS infrastructure to capture and analyz
 - Same functionality as MiniPrint
 - Logs detailed information about each attacker for analysis
 
+**11. Mailoney**
+- Low-interaction SMTP honeypot developed in Python
+- Simulates vulnerable mail server to detect and log unauthorized access attempts
+- Captures email-based attack vectors and spam attempts
+- Logs SMTP commands and authentication attempts
+
+**12. Heralding**
+- Credentials capturing honeypot developed by johnnykv
+- Captures and organizes relevant log data into 3 distinct files:
+  - Log session data
+  - Login authentication data
+  - Log session data
+- Focuses on harvesting authentication attempts across multiple protocols
+
 ---
 
 ## 📊 Data Collection Metrics
