@@ -366,8 +366,6 @@ Follow weekly progress in my weekly writeups, including:
 * **Day 6:** Malware payloads
 * **Day 7:** Weekly analytical report
 
----
-### Key Findings
 ## Correlation Analysis: Cloudflare Outage Impact
 
 On December 5, 2025, Cloudflare experienced service disruptions while patching 
