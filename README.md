@@ -109,7 +109,20 @@ A production-grade honeypot deployed on AWS infrastructure to capture and analyz
 - Offers versatile implementation across multiple cloud platforms (Microsoft Azure, GCP, AWS)
 - Ideal and accessible learning simulation platform
 
+**CVE (The Common Vulnerabilities & Exposures Program)**
+-	Dubbed “The Common Vulnerabilities and Exposures Program”, CVE was created by the National Vulnerability Database (NIST) to deal with common problems
+-	Each CVE is a vulnerability found in software and hardware components that can result in a negative impact to confidentiality, integrity, or availability when exploited. 
+-	Mitigation methods generally involve code changes, specification changes, or even the removal of affected protocols or functionality. 
+-	The National Vulnerability Database (NVD) hosts a list of common CVEs and their descriptions and origins. 
+- Link: [NIST National Vulnerability Database](https://nvd.nist.gov/vuln/search)
+
+**Suricata**
+- An open-source network analysis and threat detection engine used as an IDS (intrusion detection system), IPS (Intrusion Prevention System), and a network security monitoring program.
+- Monitors network traffic for threats and logs network vulnerabilities and malicious behavior
+
 ---
+
+## Common Ports
 
 ## Honeypot Types & Tools
 
