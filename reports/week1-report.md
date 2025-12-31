@@ -1,4 +1,4 @@
-# AWS Honeypot Week 1 Analysis Report
+# AWS Honeynet Lab Week 1 Analysis Report
 
 ## Executive Summary
 
