@@ -313,7 +313,7 @@ This incident validates the evolution toward cloud-based attack infrastructure a
 
 ## **Report Metadata**
 
-- **Author:** [Your Name]
+- **Author:** Ella Tse
 - **Report Generated:** December 2025
 - **Classification:** Internal/Threat Intelligence
 - **Next Review:** Weekly ongoing monitoring
